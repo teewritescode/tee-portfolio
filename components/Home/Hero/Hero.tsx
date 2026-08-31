@@ -1,0 +1,96 @@
+'use client'
+import { Button } from '@/components/ui/button'
+import { Download, FolderOpen } from 'lucide-react'
+import Link from 'next/link'
+import React from 'react'
+import {TypeAnimation} from 'react-type-animation'
+
+const Hero = () => {
+  return (
+    <div className="
+    min-h-screen
+    pt-[12vh]
+    bg-[radial-gradient(circle_farthest-corner_at_50.2%_50.7%,rgba(241,168,179,1)_0%,rgba(254,246,233,1)_50%)]
+    flex
+    items-center
+    justify-center
+    overflow-hidden
+    dark:bg-[radial-gradient(circle_farthest-corner_at_50%_52.5%,rgba(14,53,92,1)_0%,rgba(16,14,72,1)_90%)]
+    ">
+        {/** content */}
+        <div className="relative z-10 text-center">
+
+            {/** sub-title */}
+            <div data-aos="fade-up" className="sm:mb-6">
+                <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white
+                dark:bg-gray-600 text-sm text-muted-foreground dark:text-gray-200 mb-8">
+                    <span className="w-2 h-2 rounded-full bg-green-500"></span>
+                    AVAILABLE FOR OPPORTUNITIES
+                </span>
+            </div>
+
+            {/** title */}
+            <h1 data-aos="fade-up" data-aos-delay="100" 
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
+                Hello, I'm <span className="text-purple-800 dark:text-yellow-300">Izzati Murijin</span>
+            </h1>
+
+            {/** typewrite effects */}
+            <div data-aos="fade-up" data-aos-delay="200"
+            className="text-xl sm:text-2xl md:text-3xl text-black dark:text-white font-semibold mb-4
+            sm:mb-8 h-12">
+                <TypeAnimation
+                //pass some props
+                sequence={[
+                    "Software Development",
+                    2000,
+                    "Sales & Marketing",
+                    2000,
+                    "Administrative & Accounts",
+                    2000
+                ]} 
+
+                wrapper="span"
+                speed={50}
+                repeat={Infinity}
+                className="font-mono"
+                />
+            </div>
+
+            {/** description */}
+            <p data-aos="fade-up" data-aos-delay="300" 
+            className="text-lg text-gray-800 dark:text-amber-50 max-w-2xl mx-auto mb-10">
+                Software Engineering by Training.
+                <br/>
+                Business and Operations by Experience.
+                <br/>
+                Currently exploring the intersection of technology, business and meaningful solutions.
+            </p>
+
+            {/** buttons */}
+            <div data-aos="fade-up" data-aos-delay="400" 
+            className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button 
+                    size="lg" 
+                    className="w-fit mx-auto sm:mx-0" 
+                    nativeButton={false}
+                    render={<Link href="#_" />} >
+                    <FolderOpen className='w-5 h-5 mr-2' />
+                    View Projects
+                </Button>
+
+                <Button 
+                    size="lg" 
+                    className="w-fit mx-auto sm:mx-0" 
+                    nativeButton={false}
+                    render={<Link href="#_" />} >
+                    <Download className='w-5 h-5 mr-2' />
+                    Download CV
+                </Button>
+            </div>
+        </div>
+    </div>
+  )
+}
+
+export default Hero
