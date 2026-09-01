@@ -83,7 +83,7 @@ const Hero = () => {
                     size="lg" 
                     className="w-fit mx-auto sm:mx-0" 
                     nativeButton={false}
-                    render={<Link href="public/resume.pdf" />} >
+                    render={<Link href="/resume.pdf" />} >
                     <Download className='w-5 h-5 mr-2' />
                     Download Resume
                 </Button>

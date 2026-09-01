@@ -27,7 +27,7 @@ const Home = () => {
   })
 
   return (
-    <div className="overflow-hidden">
+    <div id='home' className="scroll-mt-20 overflow-hidden">
         <Hero/>
         <About/>
         <Skills/>
