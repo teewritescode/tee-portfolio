@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
-      lang="en" suppressHydrationWarning>
+      lang="en" className='scroll-smooth' suppressHydrationWarning>
       <body className={`${font.className} h-full antialiased`}>
         <Provider>
           <ResponsiveNav />

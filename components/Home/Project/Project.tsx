@@ -6,7 +6,7 @@ import ProjectCard from './ProjectCard'
 
 const Project = () => {
   return (
-    <div className="py-16 bg-gray-100 dark:bg-gray-900">
+    <div id='projects' className="scroll-mt-24 py-16 bg-gray-100 dark:bg-gray-900">
         <SectionHeading 
         title_1='Featured' 
         title_2='Projects' 

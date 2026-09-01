@@ -7,7 +7,7 @@ import { Lightbulb, Puzzle, Rocket, UserRound } from 'lucide-react'
 
 const Value = () => {
   return (
-    <div className='py-20 bg-gray-100 dark:bg-gray-900'>
+    <div id='value' className='scroll-mt-24 py-20 bg-gray-100 dark:bg-gray-900'>
         <SectionHeading
         title_1='What Makes'
         title_2='Me Different'
