@@ -68,7 +68,7 @@ export const contactInfo = [
 ];
 
 export const socialLinks = [
-  { icon: FaGithub, href: "https://github.com", label: "GitHub" },
+  { icon: FaGithub, href: "https://github.com/teewritescode", label: "GitHub" },
 ];
 
 export const experiences = [
